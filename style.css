@@ -256,3 +256,22 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+.form-preventa {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-preventa input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-primario);
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    flex-grow: 1;
+}
+
+.form-preventa input:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--color-primario);
+}
