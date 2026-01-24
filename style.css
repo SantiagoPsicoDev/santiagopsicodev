@@ -275,3 +275,91 @@ html {
     outline: none;
     box-shadow: 0 0 10px var(--color-primario);
 }
+.detalle-epf {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.contenido-metodo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.circulo-tech {
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--color-primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    box-shadow: 0 0 30px var(--color-primario);
+    margin: 0 auto;
+}
+.pilares-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.pilar-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 40px;
+    border-radius: 15px;
+    border-left: 5px solid var(--color-primario);
+    transition: 0.4s;
+}
+
+.pilar-card:hover {
+    background: rgba(0, 212, 255, 0.05);
+    transform: translateX(10px);
+}
+
+.pilar-numero {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(0, 212, 255, 0.2);
+    display: block;
+    margin-bottom: -20px;
+}
+
+.pilar-card h3 {
+    color: var(--color-primario);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.pilar-card p {
+    color: var(--color-texto);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.frase-final {
+    margin-top: 80px;
+    padding: 60px 20px;
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    text-align: center;
+}
+
+.frase-final h2 {
+    font-size: 2.5rem;
+    font-style: italic;
+    color: var(--color-primario);
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    margin-bottom: 10px;
+}
+
+.frase-final p {
+    font-size: 1.2rem;
+    color: var(--color-texto);
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
