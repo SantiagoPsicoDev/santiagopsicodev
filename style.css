@@ -521,3 +521,36 @@ html {
     color: #ccc;
     font-style: italic;
 }
+body {
+    background: radial-gradient(circle at center, #0d1b2a 0%, #050505 100%);
+    background-attachment: fixed;
+}
+
+
+.proyecto-item, .pilar-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 212, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+}
+
+.btn-secundario, .btn-ver {
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 212, 255, 0.2);
+}
+
+.btn-secundario:hover, .btn-ver:hover {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+    transform: scale(1.05);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primario);
+    border-radius: 10px;
+}
