@@ -554,3 +554,113 @@ body {
     background: var(--color-primario);
     border-radius: 10px;
 }
+.habilidades-seccion {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.skills-column h3 {
+    color: var(--color-primario);
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.skill-bar {
+    margin-bottom: 25px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+}
+
+.progress-line {
+    height: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-line span {
+    height: 100%;
+    position: absolute;
+    background: var(--color-primario);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color-primario);
+    animation: cargarSkills 2s ease-out forwards; /* La animación mágica */
+}
+
+@keyframes cargarSkills {
+    from { width: 0; }
+}
+.testimonios {
+    padding: 100px 10%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.testimonios-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.testimonio-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(0, 212, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 400px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.testimonio-card:hover {
+    border-color: var(--color-primario);
+    background: rgba(0, 212, 255, 0.02);
+}
+
+.comillas {
+    font-size: 5rem;
+    color: var(--color-primario);
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    opacity: 0.3;
+    font-family: serif;
+}
+
+.texto-testimonio {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.autor-info strong {
+    display: block;
+    color: var(--color-primario);
+    font-size: 1.2rem;
+}
+
+.autor-info span {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
